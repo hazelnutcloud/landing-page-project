@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+:root {
+    --main-color: #EEE;
+    --secondary-color: #111;
+}
+
+body {
+    font-family: "montserrat", san-serif;
+    color: var(--main-color, #EEE);
+    background: #222;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "bebas neue", sans-serif;
+    font-size: 7em;
+    margin: 0px;
+}
+
+#header {
+    background: var(--secondary-color, #111);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    z-index: 1;
+}
+
+#header-img {
+    width: 500px;
+}
+
+.nav-link {
+    padding: 9px;
+    color: inherit;
+    text-decoration: none;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.nav-link:hover {
+    border-radius: 4px;
+    background: hsl(0, 0%, 100%, 40%);
+}
+
+@media screen and (max-width: 805px) {
+    h1 {
+        font-size: 5em;
+    }
+    #header {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #header-img {
+        width: 270px;
+    }
+    .nav-link {
+        padding: 1px;
+    }
+}
+
+main {
+    margin-top: 80px;
+}
+
+.container {
+    position: relative;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    z-index: 0;
+}
+
+#title {
+    background-image: url(assets/title-background.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+}
+
+.footer {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    background: var(--secondary-color, #111);
+    margin: 0;
+}
+
+#video {
+    display: block;
+    margin: auto;
+    max-width: 560px;
+}
+
+.form-container {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.form-control {
+    line-height: 1.5rem;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.5rem;
+}
